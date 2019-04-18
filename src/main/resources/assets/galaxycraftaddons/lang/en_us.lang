@@ -1,14 +1,14 @@
-item.${modId}.credit_industrial.name=Industrial Credit
-item.${modId}.credit_copper.name=Copper Credit
-item.${modId}.credit_silver.name=Silver Credit
-item.${modId}.credit_gold.name=Gold Credit
-item.${modId}.credit_diamond.name=Diamond Credit
+item.galaxycraftaddons.credit_industrial.name=Industrial Credit
+item.galaxycraftaddons.credit_copper.name=Copper Credit
+item.galaxycraftaddons.credit_silver.name=Silver Credit
+item.galaxycraftaddons.credit_gold.name=Gold Credit
+item.galaxycraftaddons.credit_diamond.name=Diamond Credit
 
-item.${modId}.token_tier_1.name=Tier 1 Armory Token
-item.${modId}.token_tier_2.name=Tier 2 Armory Token
-item.${modId}.token_tier_3.name=Tier 3 Armory Token
-item.${modId}.token_tier_4.name=Tier 4 Armory Token
-item.${modId}.token_tier_5.name=Tier 5 Armory Token
-item.${modId}.token_tier_6.name=Tier 6 Armory Token
+item.galaxycraftaddons.token_tier_1.name=Tier 1 Armory Token
+item.galaxycraftaddons.token_tier_2.name=Tier 2 Armory Token
+item.galaxycraftaddons.token_tier_3.name=Tier 3 Armory Token
+item.galaxycraftaddons.token_tier_4.name=Tier 4 Armory Token
+item.galaxycraftaddons.token_tier_5.name=Tier 5 Armory Token
+item.galaxycraftaddons.token_tier_6.name=Tier 6 Armory Token
 
-item.${modId}.icon.name=Galaxy-Craft Icon
+item.galaxycraftaddons.icon.name=Galaxy-Craft Icon
