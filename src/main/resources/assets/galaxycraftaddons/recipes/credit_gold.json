@@ -1,0 +1,32 @@
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "${modId}:credit_silver"
+    },
+    {
+      "item": "${modId}:credit_silver"
+    },
+    {
+      "item": "${modId}:credit_silver"
+    },
+    {
+      "item": "${modId}:credit_silver"
+    },
+    {
+      "item": "${modId}:credit_silver"
+    },
+    {
+      "item": "${modId}:credit_silver"
+    },
+    {
+      "item": "${modId}:credit_silver"
+    },
+    {
+      "item": "${modId}:credit_silver"
+    }
+  ],
+  "result": {
+    "item": "${modId}:credit_gold"
+  }
+}

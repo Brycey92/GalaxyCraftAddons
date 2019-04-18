@@ -1,0 +1,17 @@
+[
+{
+  "modid": "${modId}",
+  "name": "${modName}",
+  "description": "An addon mod for the Galaxy-Craft custom modpack server.",
+  "version": "${modVersion}",
+  "mcversion": "${mcVersion}",
+  "url": "http://www.Galaxy-Craft.com",
+  "updateUrl": "",
+  "authorList": ["Brycey92"],
+  "credits": "Frozah, Adubbz, AbrarSyed, Unh0lyTigg, UpcraftLP, kotlin boi/therealfarfetchd, FusionLord, Paul Fulham, Commoble",
+  "logoFile": "assets/${modId}/textures/items/iconFull.png",
+  "screenshots": [],
+  "dependencies": ["forge-${forgeVersion}","IC2"],
+  "dependants": ["liteloader","voxelmenu","mapwriter","opis"]
+}
+]

@@ -1,0 +1,40 @@
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ic2:crafting",
+	  "data": 38
+    },
+	{
+      "item": "ic2:crafting",
+	  "data": 38
+    },
+	{
+      "item": "ic2:crafting",
+	  "data": 38
+    },
+	{
+      "item": "ic2:crafting",
+	  "data": 38
+    },
+	{
+      "item": "ic2:crafting",
+	  "data": 38
+    },
+	{
+      "item": "ic2:crafting",
+	  "data": 38
+    },
+	{
+      "item": "ic2:crafting",
+	  "data": 38
+    },
+	{
+      "item": "ic2:crafting",
+	  "data": 38
+    }
+  ],
+  "result": {
+    "item": "${modId}:credit_copper"
+  }
+}

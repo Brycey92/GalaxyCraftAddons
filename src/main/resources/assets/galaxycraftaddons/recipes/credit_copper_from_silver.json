@@ -1,0 +1,12 @@
+{ 
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "${modId}:credit_silver"
+    }
+  ],
+  "result": {
+    "item": "${modId}:credit_copper",
+    "count": 8
+  }
+}
