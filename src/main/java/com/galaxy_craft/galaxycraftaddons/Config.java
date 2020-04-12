@@ -22,7 +22,7 @@ public class Config {
         try {
             processConfig(config);
         } catch (Exception e) {
-            GalaxyCraftAddons.log(Level.ERROR, "Error processing config! If you see this, let me know and I'll add more debug info.");
+            GalaxyCraftAddons.log(Level.ERROR, "Error processing config! If you see this, let Brycey92 know and I'll add more debug info.");
         } finally {
             if (config.hasChanged()) {
             	GalaxyCraftAddons.log("Config reloaded successfully.");
@@ -40,13 +40,8 @@ public class Config {
     }
     
     public static void processConfig (Configuration configuration) {
-        requiredMemory = configuration.getInt("requiredMemory", Configuration.CATEGORY_GENERAL, requiredMemory, 512, 8192, "Amount of RAM (in MB) required for the modpack");
         enableCredits = configuration.getBoolean("enableCredits", Configuration.CATEGORY_GENERAL, enableCredits, "");
         enableTokens = configuration.getBoolean("enableTokens", Configuration.CATEGORY_GENERAL, enableTokens, "");
-    }
-    
-    public static int getRequiredMemory() {
-    	return requiredMemory;
     }
     
     public static boolean areCreditsEnabled() {

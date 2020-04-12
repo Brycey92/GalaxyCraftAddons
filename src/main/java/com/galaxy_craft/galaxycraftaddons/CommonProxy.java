@@ -12,17 +12,8 @@ public class CommonProxy {
     
     public void registerCommands() {}
     
-    public void doNEICheck(ItemStack itemStack) {}
-    
-    public void doLaunchCheck() {
-    	//TODO: write LaunchChecker
-    	//new LaunchChecker().doLaunchCheck();
-    }
-    
-    public void doMemoryCheck(int mem) {}
-    
-	public void doMemoryCheck() {}
-    
-    public void onSound(SoundLoadEvent event) {}
+    /*public void doNEICheck(ItemStack itemStack) {}*/
+
+    /*public void onSound(SoundLoadEvent event) {}*/
     
 }

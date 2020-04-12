@@ -64,25 +64,6 @@ public class ClientProxy extends CommonProxy {
 		} catch(Exception e){}
 	}*/
 	
-	@Override
-	public void doLaunchCheck() {}
-	
-	@Override
-	public void doMemoryCheck(int reqMem) {
-		/*Runtime runtime = Runtime.getRuntime();
-		double testMem = reqMem * 1000 / 1024;
-		double maxMem = runtime.maxMemory() / MEM_TO_GB * 1024;
-		double totalMem = runtime.totalMemory() / MEM_TO_GB * 1024;
-		if(maxMem < testMem && totalMem < testMem) {
-			throw new LowMemoryException(reqMem);
-		}*/
-	}
-	
-	@Override
-	public void doMemoryCheck() {
-		doMemoryCheck(Config.getRequiredMemory());
-	}
-	
 	/*@Override
 	public void onSound(SoundLoadEvent event) {
 		Minecraft mc = Minecraft.getMinecraft();
