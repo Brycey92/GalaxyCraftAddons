@@ -25,37 +25,37 @@ import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = GalaxyCraftAddons.MODID, name = GalaxyCraftAddons.NAME, version = GalaxyCraftAddons.VERSION)
 public class GalaxyCraftAddons {
-	
-	public static final String MODID = "@MODID@";
+
+    public static final String MODID = "@MODID@";
     public static final String NAME = "@MODNAME@";
     public static final String VERSION = "@VERSION@";
-	
-	// The instance of your mod that Forge uses.
+
+    // The instance of your mod that Forge uses.
     @Instance(value = "@MODID@")
     public static GalaxyCraftAddons instance;
     public static CreativeTabs galaxyCraftAddonsTab = new GalaxyCraftAddonsTab(CreativeTabs.getNextID(), "@MODNAME@");
     private static Logger logger = LogManager.getLogger("@MODNAME@");
-    
-    
+
+
     // Says where the client and server 'proxy' code is loaded.
-    @SidedProxy(clientSide="com.galaxy_craft.galaxycraftaddons.ClientProxy", serverSide="com.galaxy_craft.galaxycraftaddons.CommonProxy")
+    @SidedProxy(clientSide = "com.galaxy_craft.galaxycraftaddons.ClientProxy", serverSide = "com.galaxy_craft.galaxycraftaddons.CommonProxy")
     public static CommonProxy proxy;
-    
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-    	logger = event.getModLog();
-    	
-    	MinecraftForge.EVENT_BUS.register(instance);
-    	
-    	Config.load(event);
-    	
-    	ModItems.initArrays();
+        logger = event.getModLog();
+
+        MinecraftForge.EVENT_BUS.register(instance);
+
+        Config.load(event);
+
+        ModItems.initArrays();
     }
-    
+
     @EventHandler
     public void init(FMLInitializationEvent event) {
-    	
-    	//register recipes
+
+        //register recipes
       	/*
     	if(Config.enableCredits) {
       		try {
@@ -66,50 +66,50 @@ public class GalaxyCraftAddons {
     		}
       	}
       	*/
-      	
-    	//proxy.registerRenderers();
+
+        //proxy.registerRenderers();
         log("Mod initialized successfully!");
     }
-    
+
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-    	/*proxy.doNEICheck(new ItemStack(ModItems.icon));*/
-    	proxy.registerCommands();
+        /*proxy.doNEICheck(new ItemStack(ModItems.icon));*/
+        proxy.registerCommands();
     }
-    
+
     @EventHandler
-    public void serverStarting (FMLServerStartingEvent event) {
+    public void serverStarting(FMLServerStartingEvent event) {
         //event.registerServerCommand(new GCACommand());
     }
-    
+
     public static void log(Level logLevel, String message) {
-    	logger.log(logLevel, message);
-    	//FMLLog.log("Galaxy-Craft Addons", logLevel, String.valueOf(message));
+        logger.log(logLevel, message);
+        //FMLLog.log("Galaxy-Craft Addons", logLevel, String.valueOf(message));
     }
-    
+
     public static void log(String message) {
-    	log(Level.INFO, message);
+        log(Level.INFO, message);
     }
-    
+
     public static double round(double value, int places) {
-    	return new BigDecimal(value).setScale(places, RoundingMode.HALF_UP).doubleValue();
+        return new BigDecimal(value).setScale(places, RoundingMode.HALF_UP).doubleValue();
     }
-    
+
     public static void rotate(int dir) {
-        switch(dir) {
-        default:
-        case 0://bottom
+        switch (dir) {
+            default:
+            case 0://bottom
                 GL11.glRotated(90, 1, 0, 0);
-        case 1://top
+            case 1://top
                 GL11.glRotated(-90, 1, 0, 0);
-        case 2://north
+            case 2://north
                 GL11.glRotated(180, 0, 1, 0);
-        case 3://south
+            case 3://south
                 GL11.glRotated(0, 0, 1, 0);
-        case 4://west
+            case 4://west
                 GL11.glRotated(-90, 0, 1, 0);
-        case 5://east
+            case 5://east
                 GL11.glRotated(90, 0, 1, 0);
         }
-}
+    }
 }
