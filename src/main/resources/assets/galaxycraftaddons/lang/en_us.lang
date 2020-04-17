@@ -1,8 +1,8 @@
-item.galaxycraftaddons.credit_industrial.name=Industrial Credit
-item.galaxycraftaddons.credit_copper.name=Copper Credit
-item.galaxycraftaddons.credit_silver.name=Silver Credit
-item.galaxycraftaddons.credit_gold.name=Gold Credit
-item.galaxycraftaddons.credit_diamond.name=Diamond Credit
+item.credit_industrial.name=Industrial Credit
+item.credit_copper.name=Copper Credit
+item.credit_silver.name=Silver Credit
+item.credit_gold.name=Gold Credit
+item.credit_diamond.name=Diamond Credit
 
 item.galaxycraftaddons.token_tier_1.name=Tier 1 Armory Token
 item.galaxycraftaddons.token_tier_2.name=Tier 2 Armory Token
