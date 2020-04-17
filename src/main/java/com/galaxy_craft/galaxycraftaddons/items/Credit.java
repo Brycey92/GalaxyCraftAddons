@@ -72,8 +72,8 @@ public class Credit extends GCAItem {
 	
 	public Item setItemProperties() {
 		setCreativeTab(GalaxyCraftAddons.galaxyCraftAddonsTab);
-        setRegistryName(GalaxyCraftAddons.MODID, PREFIX + name);
-        setUnlocalizedName(GalaxyCraftAddons.MODID + PREFIX + name);
+        setRegistryName(PREFIX + name);
+        setUnlocalizedName(PREFIX + name);
         return this;
 	}
 }

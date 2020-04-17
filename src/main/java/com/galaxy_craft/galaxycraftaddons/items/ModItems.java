@@ -40,9 +40,10 @@ public class ModItems {
   	public static final GCAItem token_tier_4 = new Token(4);
   	public static final GCAItem token_tier_5 = new Token(5);
   	public static final GCAItem token_tier_6 = new Token(6);
-  	public static final GCAItem icon = new Token();
+  	//TODO: A better way to set creative tab icon? (without getting an item for it)
+  	public static final GCAItem icon = new Token(0, "icon");
   	
-  	public static ArrayList<Item> items = new ArrayList<Item>();
+  	public static ArrayList<Item> items = new ArrayList<>();
   	public static ArrayList<ItemBlock> itemBlocks = new ArrayList<ItemBlock>();
   	
   	public static void initArrays() {
@@ -50,7 +51,7 @@ public class ModItems {
   		
   		if(items.isEmpty()) {
   			for(Field field: fields) {
-  				if(field.getType() == Item.class) {
+  				if(field.getType() == GCAItem.class) {
 					try {
 						items.add((Item) field.get(null));
 					} catch (IllegalArgumentException | IllegalAccessException e) {

@@ -27,7 +27,7 @@ public class ClientProxy extends CommonProxy {
 	public static void onModelRegister(ModelRegistryEvent e)
 	{
 		for(Item item: ModItems.items)
-			registerItemRenderer(item);
+			if (item.getRegistryName() != null) registerItemRenderer(item);
 		
 		for(ItemBlock itemBlock: ModItems.itemBlocks)
 			registerItemBlockRenderer(itemBlock);
