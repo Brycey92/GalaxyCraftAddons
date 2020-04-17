@@ -20,7 +20,7 @@ public class Token extends GCAItem {
 	}
 
 	public Token(int tokenTier) {
-		//super has no constructor, therefore therefore there is no need to call it
+		//super has no constructor, therefore there is no need to call it
 		tier = tokenTier;
 		registryName = PREFIX+tier;
 	}
