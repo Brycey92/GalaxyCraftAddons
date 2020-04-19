@@ -41,7 +41,7 @@ public class ModItems {
   	public static final GCAItem token_tier_5 = new Token(5);
   	public static final GCAItem token_tier_6 = new Token(6);
   	//TODO: A better way to set creative tab icon? (without getting an item for it)
-  	public static final GCAItem icon = new Token(0, "icon");
+  	public static final GCAItem icon = new Token(0, "gcicon");
   	
   	public static ArrayList<Item> items = new ArrayList<>();
   	public static ArrayList<ItemBlock> itemBlocks = new ArrayList<ItemBlock>();

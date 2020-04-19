@@ -36,8 +36,8 @@ public class Token extends GCAItem {
 	
 	public Item setItemProperties() {
 		setCreativeTab(GalaxyCraftAddons.galaxyCraftAddonsTab);
-		setRegistryName(GalaxyCraftAddons.MODID, registryName);
-		setUnlocalizedName(GalaxyCraftAddons.MODID + registryName);
+		setRegistryName(registryName);
+		setUnlocalizedName(registryName);
 		return this;
 	}
 }
